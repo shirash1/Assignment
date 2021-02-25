@@ -1,0 +1,55 @@
+.constants{
+    width: 19vw;
+    height: 100%;
+    border: solid;
+    /* padding: 2vw; */
+    display: flex;
+    flex-direction: column;
+
+    .title{
+        background-color: #80ffff;
+        margin: 0;
+        padding: 1vw 0 2vw;
+        text-align: center;
+        border-bottom: solid;
+    }
+
+    .holder-workers{
+
+        .worker-card{
+            padding: 2% 0;
+
+            padding-inline-start: 1vw;
+            &:hover {
+                //background-color: #e3e3e6;
+                //border: solid 2px #9b9b9c;
+            }
+        }
+
+        .worker-selected{
+            background-color: #e3e3e6;
+            border: solid 2px #9b9b9c;
+        }
+        
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .constants{
+        width: 100%;
+        height: auto;
+
+        .holder-workers{
+            
+            text-align: center;
+
+            .worker-card{
+                padding: 0 0 2% 0;
+            }
+
+        }
+
+        
+    }
+  }

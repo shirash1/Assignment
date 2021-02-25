@@ -1,0 +1,12 @@
+.constants{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .constants{
+        flex-direction: column;
+    }
+  }

@@ -1,0 +1,44 @@
+.constants{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 28vw;
+    border: solid;
+    //border-top: none;
+    padding-top: 5vw;
+
+
+    .line{
+        display: flex;
+        justify-content: space-around;
+        border-bottom: 1px solid #ddd;
+        width: 90%;
+
+        span{
+            margin: 1vw 0px;
+            width: 50%;
+            padding-inline-start: 2vw;
+        }
+    }
+
+    .line:last-child {
+        border-bottom: 2.5px solid #b2b2b2;
+    }
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .constants{
+        width: 100%;
+
+        .line{
+            width: 100%;
+            text-align: center;
+
+            span{
+                padding: 0 2vw;
+            }
+        }
+    }
+  }

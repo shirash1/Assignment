@@ -1,0 +1,10 @@
+<div class="constants">
+    <p class="title" >workers</p>
+    <div class="holder-workers" *ngIf="workers">
+        <div *ngFor="let worker of workers; let i = index">
+                <div class="worker-card" [ngClass]="selectedWorker == worker.Id ? 'worker-selected' : ''" (click)="onOpenFlightCard(worker.Id)">
+                    {{worker.Name}}
+                </div>
+        </div>
+    </div>
+</div>

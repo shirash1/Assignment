@@ -1,0 +1,5 @@
+<div class="constants">
+    <app-list-of-workers *ngIf="selectedFlight" [workers]="workers" [selectedWorker]="selectedWorker" (onFlight)="onFlight($event)"></app-list-of-workers>
+    <app-list-of-flight *ngIf="selectedFlight" [flightOfWorker]="workerFlight" [selectedFlight]="selectedFlight" (onFlightInfo)="onFlightInfo($event)"></app-list-of-flight>
+    <app-flight-info *ngIf="selectedFlight" [toGate]="toGate" [fromGate]="fromGate" [duration]="duration" [planeNum]="planeNum"></app-flight-info>
+</div>
